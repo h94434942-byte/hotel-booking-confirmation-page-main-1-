@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar starts -->
+  <aside>
+    <div class="brand">Maison Soleil</div>
+
+    <nav>
+      <ul>
+        <li class="active">Your stay <span class="badge">1</span></li>
+        <li>The house</li>
+        <li>Around town</li>
+        <li>Breakfast</li>
+        <li>Messages</li>
+      </ul>
+    </nav>
+
+    <div class="weather">
+      <p class="weather-title">Today in Cassis</p>
+      <p class="temp">27°</p>
+      <p class="weather-desc">Sunny · light breeze</p>
+    </div>
+
+    <div class="sidebar-footer">
+      <p>Est. 1987</p>
+      <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+      <p>© 2026 Maison Soleil</p>
+    </div>
+  </aside>
+  <!-- Sidebar ends -->
+
+  <!-- Main content starts -->
+  <main>
+    <header class="booking-header">
+      <div>
+        <p class="status">Booking · Confirmed</p>
+        <h1>Bienvenue, Lucia.</h1>
+      </div>
+
+      <div class="actions">
+        <button class="print-btn">Print receipt</button>
+        <button class="calendar-btn">Add to calendar</button>
+      </div>
+    </header>
+
+    <!-- Cards Section -->
+    <div class="cards">
+      <article class="card receipt-card">
+        <div class="receipt-header">
+          <p class="receipt-title">Receipt</p>
+          <p class="receipt-number">№ MS-2026<br>0421-AH</p>
+        </div>
+
+        <h2>Your stay</h2>
+
+        <div class="stay-dates">
+          <div>
+            <p class="label">Check in</p>
+            <p class="date">25 Apr</p>
+            <p class="detail">Saturday · 15:00</p>
+          </div>
+          <div>
+            <p class="label">Check out</p>
+            <p class="date">29 Apr</p>
+            <p class="detail">Wednesday · 11:00</p>
+          </div>
+        </div>
+
+        <ul class="charges">
+          <li><span>Room · La Garrigue · 4 nights</span><span>€ 620.00</span></li>
+          <li><span>Breakfast · 2 guests</span><span>€ 96.00</span></li>
+          <li><span>Tourist tax</span><span>€ 14.40</span></li>
+        </ul>
+
+        <p class="total"><span>Total paid</span><span>€ 730.40</span></p>
+        <p class="payment-method">Paid · Wise · GBP</p>
+      </article>
+
+      <article class="card note-card">
+        <p class="welcome">Welcome</p>
+        <h2>A note from your host, Margaux.</h2>
+        <p class="note-text">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+        <div class="room-info">
+          <p class="room-label">Room</p>
+          <p class="room-name">La Garrigue</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Info Row -->
+    <div class="info-row">
+      <article class="info-card">
+        <div class="info-header">
+          <p class="info-label">Arrival</p>
+          <p class="info-number">01</p>
+        </div>
+        <h3>Check-in from 15:00</h3>
+        <p class="info-date">Sat, 25 April</p>
+        <p class="info-desc">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+      </article>
+
+      <article class="info-card">
+        <div class="info-header">
+          <p class="info-label">Wifi</p>
+          <p class="info-number">02</p>
+        </div>
+        <h3>Le Soleil · Guest</h3>
+        <p class="info-date">Password below</p>
+        <div class="wifi-details">
+          <p><span>Network</span><br>Le Soleil · Guest</p>
+          <p><span>Password</span><br><strong class="wifi-pass">soleil-2026</strong> <button class="copy-btn">Copy</button></p>
+        </div>
+      </article>
+
+      <article class="info-card">
+        <div class="info-header">
+          <p class="info-label">Breakfast</p>
+          <p class="info-number">03</p>
+        </div>
+        <h3>Served 8 - 10:30</h3>
+        <p class="info-date">On the terrace</p>
+        <p class="info-desc">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+</body>
+</html>
